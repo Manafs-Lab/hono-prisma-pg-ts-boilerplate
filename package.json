@@ -8,7 +8,7 @@
     "migrate:dev": "prisma migrate dev",
     "migrate:prod": "prisma migrate deploy",
     "db:push": "prisma db push",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
@@ -25,5 +25,8 @@
     "prisma": "^6.2.1",
     "tsc-alias": "^1.8.10",
     "tsx": "^4.7.1"
+  },
+  "engines": {
+    "node": ">=22.10.0"
   }
 }
