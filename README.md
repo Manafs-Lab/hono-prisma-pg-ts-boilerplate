@@ -10,6 +10,7 @@ This is a boilerplate project for building scalable and maintainable web applica
 - **Prisma**: Modern database toolkit with ORM and migrations.
 - **PostgreSQL**: Reliable and robust relational database.
 - **TypeScript**: Strongly typed JavaScript for enhanced maintainability.
+- **Biome**: Unified code formatter and linter for clean, consistent code.
 - **Husky + Commitlint**: Ensures code quality and commit message standards.
 - **Environment Configuration**: Supports multiple environments with `.env` files.
 
@@ -24,6 +25,7 @@ Ensure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (v22+ recommended)
 - [npm](https://www.npmjs.com/)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Biome](https://biomejs.dev/) (for code formatting and linting; optional for contributors but recommended. Install the [Biome extension for VSCode](https://marketplace.visualstudio.com/items?itemName=biomejs.biome) (or your preferred code editor/IDE).)
 
 ### Installation
 
@@ -162,8 +164,9 @@ Here are some useful scripts:
 - **`npm run dev`**: Start the development server.
 - **`npm run build`**: Build the project for production.
 - **`npm start`**: Start the production server.
-- **`npm run migrate:dev`**: Run dev migration.
-- **`npm run migrate:prod`**: Run prod migration.
+- **`npm run format`**: Format the codebase using the configured formatter (e.g. Biome).
+- **`npm run lint`**: Lint the codebase to identify and fix any issues.
+- **`npm test`**: Run Biome's check command to apply both format and lint.
 
 ---
 

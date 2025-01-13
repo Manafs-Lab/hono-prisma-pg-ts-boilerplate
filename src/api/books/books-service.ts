@@ -1,5 +1,5 @@
 import { prisma } from "@lib/prisma";
-import { TCreateBook, TUpdateBook } from "./books-schema";
+import type { TCreateBook, TUpdateBook } from "./books-schema";
 
 export const InsertBook = async (createBookDto: TCreateBook) => {
   const book = await prisma.book.create({ data: createBookDto });

@@ -1,10 +1,10 @@
 import { Hono } from "hono";
 import {
   createBook,
+  deleteBook,
   getAllBooks,
   getBook,
   updateBook,
-  deleteBook,
 } from "./books-controller";
 
 const router = new Hono();

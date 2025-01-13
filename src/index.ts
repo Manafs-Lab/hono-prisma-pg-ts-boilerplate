@@ -1,6 +1,6 @@
+import booksRoute from "@api/books/books-route";
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
-import booksRoute from "@api/books/books-route";
 import { cors } from "hono/cors";
 import { globalErrorHandler } from "./helpers/error-handler";
 
@@ -15,7 +15,7 @@ app.route("/api/v1/books", booksRoute);
 
 app.onError(globalErrorHandler);
 
-const port = parseInt(process.env.PORT || "4200", 10);
+const port = Number.parseInt(process.env.PORT || "4200", 10);
 console.log(`Server is running on http://localhost:${port}`);
 
 serve({
