@@ -166,7 +166,7 @@ Here are some useful scripts:
 - **`npm start`**: Start the production server.
 - **`npm run format`**: Format the codebase using the configured formatter (e.g. Biome).
 - **`npm run lint`**: Lint the codebase to identify and fix any issues.
-- **`npm test`**: Run Biome's check command to apply both format and lint.
+- **`npm run check`**: Run Biome's check command to apply both format and lint.
 
 ---
 

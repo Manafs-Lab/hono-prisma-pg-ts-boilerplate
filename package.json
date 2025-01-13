@@ -11,7 +11,7 @@
     "prepare": "husky",
     "format": "biome format --write .",
     "lint": "biome format --write .",
-    "test": "biome check --write ."
+    "check": "biome check --write ."
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
