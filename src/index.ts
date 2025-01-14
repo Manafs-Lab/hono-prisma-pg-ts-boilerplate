@@ -1,3 +1,4 @@
+import "dotenv/config";
 import booksRoute from "@api/books/books-route";
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
