@@ -157,6 +157,15 @@ git commit --no-verify
 
 ---
 
+## 🔠 Naming Conventions
+
+- **Files & Folders**: `kebab-case` (e.g., `user-profile.tsx`)
+- **Constants**: `SNAKE_CASE` (e.g., `API_BASE_URL`)
+- **Variables & Functions**: `camelCase` (e.g., `fetchUserData`)
+- **Classes & Schemas**: `PascalCase` (e.g., `UserProfile`)
+
+---
+
 ## Scripts
 
 Here are some useful scripts:
