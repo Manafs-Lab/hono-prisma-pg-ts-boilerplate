@@ -20,12 +20,16 @@
     "hono": "^4.6.15",
     "zod": "^3.24.1"
   },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": "npm run check"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@types/node": "^20.11.17",
     "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "prisma": "^6.2.1",
     "tsc-alias": "^1.8.10",
     "tsx": "^4.7.1"
