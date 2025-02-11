@@ -13,15 +13,15 @@
     "lint": "biome format --write ./src",
     "check": "biome check --write ./src"
   },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": "npm run check"
+  },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "@prisma/client": "^6.2.1",
     "dotenv": "^16.4.7",
     "hono": "^4.6.15",
     "zod": "^3.24.1"
-  },
-  "lint-staged": {
-    "**/*.{js,ts,tsx}": "npm run check"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
